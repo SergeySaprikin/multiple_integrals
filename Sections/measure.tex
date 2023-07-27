@@ -1,0 +1,156 @@
+\part{Вимірні множини}\label{part:measure}
+Наша наступна мета --- визначити кратні інтеграли не тільки по гіперпрямокутниках, а і по множинах більш широкого класу. Цей клас --- клас вимірних за Жорданом множин. До визначення цього класу ми зараз і переходимо.
+\section{Розбиття простору \eucl{m}}
+\begin{definition}
+Розбиттям нульового порядку простору \eucl{m} будемо називати зображення простору \eucl{m} у вигляді об'єднання всіх можливих брусів. сторони яких є відрізками довижини 1 з цілими координатами:
+\[
+\eucl{m} = \bigcup\limits_{n_1, n_2, \ldots, n_m\in\Z}\segment{n_1}{n_1+1}\times\segment{n_2}{n_2+1}\times\ldots\times\segment{n_m}{n_m+1}.
+\]
+\end{definition}
+\begin{definition}
+Розбиттям $k$--го порядку для ${k\in\N}$ простору \eucl{m} будемо називати зображення простору \eucl{m} у вигляді об'єднання всіх можливих брусів, сторони яких є відрізками довижини ${\frac{1}{2^k}}$ з координатами, які можуть бути надані у вигляді раціонального дробу (можливо, скоротного) ${\frac{n}{2^k}}$, ${n\in\Z}$:
+\[
+\eucl{m} = \bigcup\limits_{n_1, n_2, \ldots, n_m\in\Z}\segment{\frac{n_1}{2^k}}{\frac{n_1+1}{2^k}}\times\segment{\frac{n_2}{2^k}}{\frac{n_2+1}{2^k}}\times\ldots\times\segment{\frac{n_m}{2^k}}{\frac{n_m+1}{2^k}}.
+\]
+\end{definition}
+Множину всіх брусів розбиття порядку $k$, ${k\in\N\cup\{0\}}$ будемо позначати ${\pi^{(k)}}$:
+\[
+\pi^{(k)} =
+\left\{
+\left.
+\segment{\frac{n_1}{2^k}}{\frac{n_1+1}{2^k}}\times\segment{\frac{n_2}{2^k}}{\frac{n_2+1}{2^k}}\times\ldots\times\segment{\frac{n_m}{2^k}}{\frac{n_m+1}{2^k}}
+\right| n_1, n_2, \ldots, n_m\in\Z
+\right\}.
+\]
+\section{Міра Жордана}
+\hyperref[def:box]{Нагадаємо}, що мірою брусу
+\[
+Q = \segment{a_1}{b_1}\times\segment{a_2}{b_2}\times\ldots\times\segment{a_m}{b_m} \subset \eucl{m},
+\]
+називають число
+\[
+\m(Q) = \left(b_1-a_1\right)\left(b_2 - a_2\right)\ldots\left(b_m-a_m\right) = \prod\limits_{j=1}^{m}\left(b_j - a_j\right).
+\]
+\begin{definition}
+Якщо множина ${A\subset\eucl{m}}$ є об'єднанням скінченої кількості брусів, внутрішності яких попарно не перетинаються,
+\[
+A = \bigcup\limits_{j=1}^nQ_j,
+\]
+то мірою $A$ будемо називати суму мір цих брусів:
+\[
+\m\left(A\right) = \sum\limits_{j=1}^n\m\left(Q_j\right).
+\]
+Зокрема, мірою порожньої множини будемо вважати 0:
+\[
+\m(\emptyset) = 0.
+\]
+\end{definition}
+Це означення, зокрема, можна застосовувати для тих випадків, коли ${Q_1}$, ${Q_2}$, ${\ldots}$, ${Q_n}$ --- різні бруси певного розбиття ${\pi^{(k)}}$.
+
+Нехай тепер ${A\subset\eucl{m}}$ --- довільна обмежена множина, ${\pi^{(k)}}$ --- розбиття \eucl{m}, $k\in\N\cup\{0\}$. Введемо наступні позначення:
+\begin{itemize}\label{partition_sets}
+\item $A_{(k)}$ --- об'єднання всіх брусів з ${\pi^{(k)}}$, які є підмножиною $A$:
+\[
+A_{(k)} = \bigcup\limits_{\tiny{\begin{array}{c}Q\in\pi^{(k)}\\Q\subset A\end{array}}}Q;
+\]
+\item $A^{(k)}$ --- об'єднання всіх брусів з ${\pi^{(k)}}$, які мають непорожній перетин з $A$:
+\[
+A_{(k)} = \bigcup\limits_{\tiny{\begin{array}{c}Q\in\pi^{(k)}\\Q\cap A\neq \emptyset\end{array}}}Q;
+\]
+\item $\Delta A^{(k)}$ --- різниця множин $A^{(k)}$ і $A_{(k)}$:
+\[
+\Delta A_{(k)} = A^{(k)} \setminus A_{(k)}.
+\]
+\end{itemize}
+У випадках, коли описаних вище брусів не існує, будемо вважати відповідну множину порожньою.
+Множини ${A_{(k)}}$, ${A^{(k)}}$ і ${\Delta A_{(k)}}$ мають наступні властивості:
+\begin{itemize}
+\item ${A_{(k)} \subset A \subset A^{(k)}}$,
+\item ${A_{(k)} \subset A_{(k+1)}}$,
+\item ${A^{(k+1)} \subset A^{(k)}}$.
+\end{itemize}
+Оскільки всі три множини ${A_{(k)}}$, ${A^{(k)}}$ і ${\Delta A_{(k)}}$ є об'єднаннями брусів розбиття ${\pi^{(k)}}$, то визначені їх міри ${\m\left(A_{(k)}\right)}$, ${\m\left(A^{(k)}\right)}$ і ${\m\left(\Delta A_{(k)}\right)}$, причому зозначення і властивостей множин випливають властивості їх мір:
+\begin{itemize}
+\item ${0 \leq \m\left(A_{(k)}\right) \leq \m\left(A^{(k)}\right)}$,
+\item ${\m\left(A_{(k)}\right) \leq \m\left(A_{(k+1)}\right)}$,
+\item ${\m\left(A^{(k+1)}\right) \leq \m\left(A^{(k)}\right)}$,
+\item ${\m\left(\Delta A_{(k)}\right) = \m\left(A^{(k)}\right) - \m\left(A_{(k)}\right)}$.
+\end{itemize}
+З цих властивостей, зокрема, випливає, що обидві послідовності ${\left\{\m\left(A_{(k)}\right)\right\}}$ і ${\left\{\m\left(A^{(k)}\right)\right\}}$ є обмеженими і монотонними, а значить, збіжними.
+\begin{definition}
+Внутрішньою мірою обмеженої множини ${A\subset\eucl{m}}$ будемо називати число
+\[
+\m_{*}\left(A\right) = \lim\limits_{k\to\infty}\m\left(A_{(k)}\right).
+\]
+Зовнішньою мірою множини ${A}$ будемо називати число
+\[
+\m^{*}\left(A\right) = \lim\limits_{k\to\infty}\m\left(A^{(k)}\right).
+\]
+\end{definition}
+З властивостей міри множин ${A_{(k)}}$ і ${A^{(k)}}$ випливає, що
+\[
+0 \leq \m_{*}\left(A\right) \leq \m^{*}\left(A\right)
+\]
+для довільної обмеженої множини $A$.
+\begin{definition}
+Обмежену множину ${A\subset\eucl{m}}$ будемо називати вимірною за Жорданом, якщо
+\[
+\m_{*}\left(a\right) = \m^{*}\left(a\right).
+\]
+В цьому випадку спільне значення ${\m_{*}\left(a\right) = \m^{*}\left(a\right)}$ будемо називати ($m$--вимірною) мірою Жордана множини $A$ і будемо позначати ${\m\left(A\right)}$:
+\[
+\m\left(A\right) =\m_{*}\left(A\right) = \m^{*}\left(A\right).
+\]
+\end{definition}
+Вимірні за Жорданом множини мають наступні властивості:
+\begin{itemize}
+\item\label{prop:measrable_sets:1} якщо $A$ і $B$ --- вимірні за Жорданом, то і ${A\cup B}$ також є вимірною за Жорданом;
+\item якщо $A$ і $B$ --- вимірні за Жорданом, то і ${A\cap B}$ також є вимірною за Жорданом;
+\item якщо $A$ і $B$ --- вимірні за Жорданом, то і ${A\setminus B}$ також є вимірною за Жорданом.
+\end{itemize}
+Міра Жордана має наступні властивості:
+\begin{enumerate}
+\item ${\m\left(A\right)\geq 0}$ для довільної вимрної за Жорданом множини ${A}$;
+\item {\bf напівадидивність}:
+${\m\left(A\cup B\right) \leq \m\left(A\right) + \m\left(B\right)}$ для довільних вимрних за Жорданом множин ${A}$ і ${B}$;
+\item {\bf адидивність}:
+${\m\left(A\cup B\right) = \m\left(A\right) + \m\left(B\right)}$ для довільних вимрних за Жорданом множин ${A}$ і ${B}$, внутрішності яких не перетинаються;
+\item {\bf монотонність}: ${\m\left(A\right)\leq \m\left(B\right)}$ для довільних вимрних за Жорданом множин ${A\subset B}$.
+\end{enumerate}
+Важливим класом вимвірних множин є циліндричні множини, визначені в наступному означенні.
+\begin{definition}
+Нехай ${m\geq2}$. У просторі \eucl{m-1} розглянемо множину ${A \subset \eucl{m-1}}$ і дві функції
+\[
+u_1,u_2\colon A\to \R,
+\]
+які задовольняють наступну властивість:
+\[
+\forall \left(x_1, x_2, \ldots, x_{m-1}\right)\in A\ u_1\left(x_1, x_2, \ldots, x_{m-1}\right)\leq u_2\left(x_1, x_2, \ldots, x_{m-1}\right).
+\]
+Тоді множину
+\[
+C =
+\left\{
+\left(x_1, x_2, \ldots, x_{m-1}, x_m\right)
+\left|
+\begin{array}{c}
+\left(x_1, x_2, \ldots, x_{m-1}\right)\in A,\\
+u_1\left(x_1, x_2, \ldots, x_{m-1}\right)\leq x_m \leq u_2\left(x_1, x_2, \ldots, x_{m-1}\right)
+\end{array}
+\right.
+\right\}
+\]
+будемо називати циліндричною в напрямку осі ${Ox_m}$ з основою $A$. Основу циліндричної множини $C$ будемо позначати ${\ba C}$:
+\[
+A = \ba C.
+\]
+\end{definition}
+Вимірність широкого класу циліндричних множин встановлюється наступною теоремою.
+\begin{theorem}
+Нехай $C$ --- циліндрична множина, що визначається основою $\ba C$ і функціями ${u_1, u_2\colon \ba C\to \R.}$ Якщо
+\begin{enumerate}
+\item $\ba C$ --- компактна вимірна підмножина \eucl{m-1},
+\item функції $u_1$ і $u_2$ неперервні на $\ba C$,
+\end{enumerate}
+то множина $C$ --- компактна і вимірна.
+\end{theorem}
