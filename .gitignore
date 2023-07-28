@@ -171,9 +171,6 @@ acs-*.bib
 _minted*
 *.pyg
 
-# morewrites
-*.mw
-
 # newpax
 *.newpax
 
