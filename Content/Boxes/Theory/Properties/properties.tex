@@ -1,0 +1,49 @@
+\section{Властивості кратних інтегралів по гіперпрямокутниках}
+\begin{enumerate}
+\item Інтеграл від константи.
+\begin{intextProposition}
+Для довільної дійсної константи $c$ стала функція ${f(x) \equiv c}$ інтегровна на довільному брусі $Q$, причому
+\[
+\int\limits_{Q} c d x = c\m\left(Q\right).
+\]
+\end{intextProposition}
+\item Лінійність
+\begin{intextProposition}
+Якщо обидві функції ${f\colon Q \to \R}$ і ${g\colon Q \to \R}$ неперервні на брусі $Q$, то для довільних дійсних чисел $\alpha$ і $\beta$ виконується рівність
+\[
+\int\limits_{Q} \left(\alpha f(x) + \beta g(x)\right)d x = \alpha\int\limits_{Q} f(x) d x + \beta\int\limits_{Q} g(x) d x.
+\]
+\end{intextProposition}
+\item Аддитивність
+\begin{intextProposition}
+Якщо брус $Q$ є об'єднанням двох брусів --- ${Q = Q_1 \cup Q_2}$, причому бруси $Q_1$ і $Q_2$ не мають спільних внутрішніх точок, а функція ${f\colon Q \to \R}$ неперервна на $Q$, то
+\[
+\int\limits_{Q} f(x) d x = \int\limits_{Q_1} f(x) d x + \int\limits_{Q_2} f(x) d x.
+\]
+\end{intextProposition}
+\begin{remark}
+Окільки функція ${f}$ неперервна на $Q$, то вона неперервна на $Q_1$ і $Q_2$, а значить, всі три інтеграли існують.
+\end{remark}
+\item Невід'ємність
+\begin{intextProposition}
+Якщо функція ${f\colon Q \to \R}$ неперервна на брусі $Q$ і ${\forall x\in Q\ f(x)\geq 0}$, то ${\int\limits_{Q} f(x) d x \geq 0.}$
+\end{intextProposition}
+\item Монотонність
+\begin{intextProposition}
+Якщо обидві функції ${f\colon Q \to \R}$ і ${g\colon Q \to \R}$ неперервні на брусі $Q$ і ${\forall x\in Q\ f(x)\geq g(x)}$, то ${\int\limits_{Q} f(x) d x \geq \int\limits_{Q} g(x) d x.}$
+\end{intextProposition}
+\item Модуль інтеграла
+\begin{intextProposition}
+Якщо функція ${f\colon Q \to \R}$ неперервна на брусі $Q$, то
+\[
+\left|\int\limits_{Q} f(x) d x\right| \leq \int\limits_{Q} \left|f(x)\right| d x.
+\]
+\end{intextProposition}
+\item Теорема про середнє значення
+\begin{intextProposition}
+Якщо функція ${f\colon Q \to \R}$ неперервна на брусі $Q$, то
+\[
+\exists \theta\in Q\colon \int\limits_{Q} f(x) d x = f\left(\theta\right)\m\left(Q\right).
+\]
+\end{intextProposition}
+\end{enumerate}

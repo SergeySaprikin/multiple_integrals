@@ -1,0 +1,17 @@
+\section{Обчислення кратних інтегралів по вимірних множинах}
+Обчислення кратних інтегралів відбувається шляхом зведення них до повторних на підставі наступної теореми.
+\begin{theorem}
+Нехай задані циліндрична множина $C$, що визначається основою $\ba C$ і функціями ${u_1, u_2\colon \ba C\to \R}$ і функція $f\colon C\to \R$. Якщо
+\begin{enumerate}
+\item $\ba C$ --- компактна вимірна підмножина \eucl{m-1},
+\item функції $u_1$ і $u_2$ неперервні на $\ba C$,
+\item функція $f$ неперервна на $C$.
+\end{enumerate}
+Тоді має місце наступна рівність:
+\[
+\begin{array}{c}
+\int\limits_C f(x)d x = \\
+ =\int\limits_{\ba C}\left( \int\limits_{u_1\left(x_1, x_2,\ldots, x_{m-1}\right)}^{u_2\left(x_1, x_2,\ldots, x_{m-1}\right)} f\left(x_1, \ldots, x_{m-1}, x_m \right)d x_m\right) d x_1 \ldots  d x_{m-1}.
+\end{array}
+\]
+\end{theorem}

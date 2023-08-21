@@ -1,0 +1,46 @@
+\section{Властивості кратних інтегралів по вимірних множинах}
+Властивості кратних інтегралів по вимірних множинах аналогічні властивостям кроатних інтегралів по гіперпрямокутникам.
+\begin{enumerate}
+\item Інтеграл від константи.
+\begin{intextProposition}
+Для довільної дійсної константи $c$ стала функція ${f(x) \equiv c}$ інтегровна на довільній вимірниій множині $A$, причому
+\[
+\int\limits_{A} c d x = c\m\left(Q\right).
+\]
+\end{intextProposition}
+\item Лінійність
+\begin{intextProposition}
+Якщо обидві функції ${f\colon A \to \R}$ і ${g\colon Q \to \R}$ неперервні і обмежені на вимірній множині $A$, то для довільних дійсних чисел $\alpha$ і $\beta$ виконується рівність
+\[
+\int\limits_{A} \left(\alpha f(x) + \beta g(x)\right)d x = \alpha\int\limits_{A} f(x) d x + \beta\int\limits_{A} g(x) d x.
+\]
+\end{intextProposition}
+\item Аддитивність
+\begin{intextProposition}
+Якщо множина $A$ є об'єднанням двох вимірних множин --- ${A = A_1 \cup A_2}$, причому вимірні множини $A_1$ і $A_2$ не мають спільних внутрішніх точок, а функція ${f\colon A \to \R}$ неперервна і обмежена на $A$, то
+\[
+\int\limits_{A} f(x) d x = \int\limits_{A_1} f(x) d x + \int\limits_{A_2} f(x) d x.
+\]
+\end{intextProposition}
+\begin{remark}
+Окільки $A_1$ і $A_2$ --- вимірні множини, то і ${A = A_1 \cup A_2}$ --- вимірна множина за \hyperref[prop:measrable_sets:1]{властивістю вимірних множин}.
+\end{remark}
+\item Невід'ємність
+\begin{intextProposition}
+Якщо функція ${f\colon A \to \R}$ неперервна і обмежена на вимірній множині $A$ і ${\forall x\in A\ f(x)\geq 0}$, то ${\int\limits_{A} f(x) d x \geq 0.}$
+\end{intextProposition}
+\item Монотонність
+\begin{intextProposition}
+Якщо обидві функції ${f\colon A \to \R}$ і ${g\colon A \to \R}$ неперервні і обмежені на вимірній множині $A$ і ${\forall x\in A\ f(x)\geq g(x)}$, то ${\int\limits_{A} f(x) d x \geq \int\limits_{A} g(x) d x.}$
+\end{intextProposition}
+\item Модуль інтеграла
+\begin{intextProposition}
+Якщо функція ${f\colon A \to \R}$ неперервна і обмежена на вимірній множині $A$, то
+\[
+\left|\int\limits_{A} f(x) d x\right| \leq \int\limits_{A} \left|f(x)\right| d x.
+\]
+\end{intextProposition}
+\end{enumerate}
+\begin{remark}
+Формулювання теореми про середнє значення у випадку кратних інтегралів по вимірних множинах потребує поняття лінійної зв'язності множин, і тому ми його тут не приводимо.
+\end{remark}

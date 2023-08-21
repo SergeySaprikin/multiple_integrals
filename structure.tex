@@ -23,6 +23,8 @@
 \usepackage{graphicx} % Required for including pictures
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
+\usepackage{multicol} % For multiple columns
+
 \usepackage{lipsum} % Inserts dummy text
 
 \usepackage{tikz} % Required for drawing custom shapes
@@ -33,7 +35,7 @@
 \usepackage[T2A]{fontenc}
 
 \usepackage[shortlabels]{enumitem} % Customize lists
-\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+% \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
 
 \usepackage{booktabs} % Required for nicer horizontal rules in tables
 
@@ -561,3 +563,6 @@ addtohook={%
 \newcommand\segment[2]{\ensuremath{\left[#1;#2\right]}}
 \allowdisplaybreaks
 \setcounter{tocdepth}{4}
+
+\newtheorem{solutionT}{Розвёязання}[chapter]
+\newenvironment{solution}{\begin{solutionT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{solutionT}}
