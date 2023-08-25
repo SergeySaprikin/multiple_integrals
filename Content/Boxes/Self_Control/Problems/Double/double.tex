@@ -1,13 +1,13 @@
 \section{Подвійні інтеграли}
-В завданнях (\ref{problem:box:self_control:reduction}--\ref{problem:box:self_control:outer}) наведені кроки, які потрібно зробити для того, щоб підрахувати подвійні інтеграли, наведені в завданні  (\ref{problem:box:self_control:reduction}).
+В завданнях (\ref{problem:box:self_control:double:reduction}--\ref{problem:box:self_control:double:outer}) наведені кроки, які потрібно зробити для того, щоб підрахувати подвійні інтеграли, наведені в завданні  (\ref{problem:box:self_control:double:reduction}).
 
-Якщо ви правильно зробили завдання  (\ref{problem:box:self_control:reduction}), то в завданні (\ref{problem:box:self_control:inner}) ви побачите внутрішні інтеграли з отриманих вами подвійних.
+Якщо ви правильно зробили завдання  (\ref{problem:box:self_control:double:reduction}), то в завданні (\ref{problem:box:self_control:double:inner}) ви побачите внутрішні інтеграли з отриманих вами подвійних.
 
-Якщо ви правильно зробили завдання  (\ref{problem:box:self_control:inner}), то в завданні (\ref{problem:box:self_control:outer}) ви побачите інтеграли від отриманих вами функцій.
+Якщо ви правильно зробили завдання  (\ref{problem:box:self_control:double:inner}), то в завданні (\ref{problem:box:self_control:double:outer}) ви побачите інтеграли від отриманих вами функцій.
 
-Відповіді на завдання (\ref{problem:box:self_control:outer}) будуть значеннями відповідних подвійних інтегралів, наведених в завданні (\ref{problem:box:self_control:reduction}), а також тих повторних інтегралів, які ви повинні отримати при виконанні завдання (\ref{problem:box:self_control:reduction}).
+Відповіді на завдання (\ref{problem:box:self_control:double:outer}) будуть значеннями відповідних подвійних інтегралів, наведених в завданні (\ref{problem:box:self_control:double:reduction}), а також тих повторних інтегралів, які ви повинні отримати при виконанні завдання (\ref{problem:box:self_control:double:reduction}).
 \begin{enumerate}
-\item\label{problem:box:self_control:reduction} Зведіть наступні подвійні інтеграли до повторних двома способами.
+\item\label{problem:box:self_control:double:reduction} Зведіть наступні подвійні інтеграли до повторних двома способами.
     \begin{enumerate}[label*=\arabic*.]
         \item $\iint\limits_R x^2y\,dx\,dy$, де $R$ --- прямокутник з вершинами $(0, 0)$, $(2, 0)$, $(2, 3)$, та $(0, 3)$.
         \item $\iint\limits_R e^{x + y}\,dx\,dy$, де $R$ --- прямокутник з вершинами $(0, 0)$, $(4, 0)$, $(4, 5)$, та $(0, 5)$.
@@ -21,7 +21,7 @@
         \item $\iint\limits_R \frac{x^2}{y^2}\,dx\,dy$, де $R$ --- прямокутник, обмежений прямими $x=0$, $x=2$, $y=1$, та $y=3$.
     \end{enumerate}
 
-\item\label{problem:box:self_control:inner} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви знаходите внутрішні інтеграли з відповідей на попереднє завдання, а також не те, що відповіді на це завдання мають бути функціями від $x$ або від $y$.
+\item\label{problem:box:self_control:double:inner} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви знаходите внутрішні інтеграли з відповідей на попереднє завдання, а також не те, що відповіді на це завдання мають бути функціями від $x$ або від $y$.
 \begin{enumerate}[label*=\arabic*.]
 \item  \begin{multicols}{2}\begin{enumerate}[label=(\alph*)]
             \item $\int\limits_0^2 x^2y\,dx$
@@ -64,7 +64,7 @@
             \item $\int\limits_1^3 \frac{x^2}{y^2}\,dy$
             \end{enumerate}\end{multicols}
 \end{enumerate}
-\item\label{problem:box:self_control:outer} Підрахуйте наступні інтеграли Рімана. Переконайтесь, що інтеграли дорівнюють один одному. Зверніть увагу на те, що ви інтегруєте функціїї, що є відповідями на попереднє завдання, а межі інтегрування відповідають зовнішнім інтегралам з відповідей на задвання (\ref{problem:box:self_control:reduction}).
+\item\label{problem:box:self_control:double:outer} Підрахуйте наступні інтеграли Рімана. Переконайтесь, що інтеграли дорівнюють один одному. Зверніть увагу на те, що ви інтегруєте функціїї, що є відповідями на попереднє завдання, а межі інтегрування відповідають зовнішнім інтегралам з відповідей на задвання (\ref{problem:box:self_control:double:reduction}).
 \par\noindent
 \begin{minipage}{14.5cm}
 \begin{enumerate}[label*=\arabic*.]
@@ -111,7 +111,7 @@
 \end{enumerate}
 \end{minipage}
 \item Підрахуйте наступні подвійні інтеграли. Переконайтесь, що інтеграли дорівнюють один одному.
- \begin{enumerate}[label=\arabic*.]
+ \begin{enumerate}[label*=\arabic*.]
             \item $\int\limits_0^3\int\limits_0^2 x^2y\,dx\,dy$ та $\int\limits_0^2 \int\limits_0^3 x^2y\,dy\,dx$
             \item $\int\limits_0^5\int\limits_0^4 e^{x + y}\,dx\,dy$ та $\int\limits_0^4 \int\limits_0^5 e^{x + y}\,dy\,dx$
             \item $\int\limits_0^2\int\limits_1^2 \frac{y}{x}\,dx\,dy$ та $\int\limits_1^2 \int\limits_0^2 \frac{y}{x}\,dy\,dx$

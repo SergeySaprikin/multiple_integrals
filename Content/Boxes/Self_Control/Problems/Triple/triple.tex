@@ -1,7 +1,16 @@
 \section{Потрійні інтеграли}
+В завданнях (\ref{problem:box:self_control:triple:reduction}--\ref{problem:box:self_control:triple:outer}) описані кроки, які потрібно зробити для того, щоб підрахувати потрійні інтеграли, наведені в завданні  (\ref{problem:box:self_control:triple:reduction}).
+
+Якщо ви правильно зробили завдання  (\ref{problem:box:self_control:triple:reduction}), то в завданні (\ref{problem:box:self_control:triple:inner}) ви побачите внутрішні інтеграли з отриманих вами потрійних.
+
+Якщо ви правильно зробили завдання  (\ref{problem:box:self_control:triple:inner}), то в завданні (\ref{problem:box:self_control:triple:middle}) ви побачите інтеграли від отриманих вами функцій, а межі інтегрування відповідатимуть межам у відповіному інтегралі з отриманним вами в завданні (\ref{problem:box:self_control:triple:reduction} повторних інтегралів.
+
+Так само, якщо ви правильно зробили завдання  (\ref{problem:box:self_control:triple:middle}), то в завданні (\ref{problem:box:self_control:triple:outer}) ви побачите інтеграли від отриманих вами функцій, а межі інтегрування відповідатимуть межам у відповіному інтегралі з отриманним вами в завданні (\ref{problem:box:self_control:triple:reduction} повторних інтегралів.
+
+Відповіді на завдання (\ref{problem:box:self_control:triple:outer}) будуть значеннями відповідних потрійних інтегралів, наведених в завданні (\ref{problem:box:self_control:triple:reduction}), а також тих повторних інтегралів, які ви повинні отримати при виконанні завдання (\ref{problem:box:self_control:triple:reduction}).
 \begin{enumerate}
-\item Зведіть наступні потрійні інтеграли до повторних таким чином, щоб в повторному інтегралі інтегрування відбувалось спочатку по $y$, потім по $x$, а в кінці по $z$.
-    \begin{enumerate}[label=\arabic*.]
+\item\label{problem:box:self_control:triple:reduction} Зведіть наступні потрійні інтеграли до повторних таким чином, щоб в повторному інтегралі інтегрування відбувалось спочатку по $y$, потім по $x$, а в кінці по $z$.
+    \begin{enumerate}[label*=\arabic*.]
         \item $\iiint\limits_D z \,dx\,dy\,dz$, де $D$ --- прямокутний паралелепіпед, обмежений площинами $x = 0$, $y = 0$, $z = 0$, $x = 1$, $y = 2$, $z = 3$.
         \item  $\iiint\limits_{V} \left(x^2 + y^2 + z^2\right) \, dx \, dy \, dz$, де $V$ --- прямокутний паралелепіпед, обмежений площинами $x = 0$, $y = 0$, $z = 0$, $x = 2$, $y = 3$, $z = 4$.
         \item $\iiint\limits_{W} 8 z^{2} x {\mathrm e}^{2 x y z} \, dx \, dy \, dz$, де $W$ --- прямокутний паралелепіпед з вершинами $(0,0,0)$, $(1,0,0)$, $(0,2,0)$, $(0,0,3)$.
@@ -13,8 +22,9 @@
         \item $\iiint\limits_{U} \left(x^3 + y^3 + z^3\right) \, dx \, dy \, dz$, де $U$ --- прямокутний паралелепіпед, з вершинами $(0,0,0)$, $(1,0,0)$, $(0,1,0)$, $(0,0,1)$.
         \item  $\iiint\limits_{V} \left(2xy + z^2\right) \, dx \, dy \, dz$, де $V$ --- прямокутний паралелепіпед, описаний площинами $x = 0$, $y = 0$, $z = 0$, $x = 2$, $y = 1$, $z = 3$.
     \end{enumerate}
-\item Підрахуйте наступні інтеграли Рімана:
-  \begin{enumerate}[label*=\arabic*.]
+\item \label{problem:box:self_control:triple:inner}Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви знаходите внутрішні інтеграли з відповідей на попереднє завдання, а також не те, що відповіді на це завдання можуть залежати від $x$ та від $z$.
+\begin{multicols}{2}
+    \begin{enumerate}[label*=\arabic*.]
         \item $\int\limits_0^2 z \,dy$.
         \item $\int\limits_0^3 \left(x^2 + y^2 + z^2\right) \,dy$.
         \item $\int\limits_0^2 8 z^{2} x {\mathrm e}^{{2}{}{x}{}{y}{}{z}} \,dy$.
@@ -25,8 +35,10 @@
         \item $\int\limits_2^4 \frac{1}{xyz} \,dy$.
         \item $\int\limits_0^1 \left(x^3 + y^3 + z^3\right) \,dy$.
         \item $\int\limits_0^1 \left(2xy + z^2\right) \,dy$.
-        \end{enumerate}
-\item Підрахуйте наступні інтеграли Рімана:
+    \end{enumerate}
+\end{multicols}
+\item\label{problem:box:self_control:triple:middle} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви інтегруєте функціїї, що є відповідями на попереднє завдання, а межі інтегрування збігаються з межами відповідних повторних інтегралів з відповідей на задвання (\ref{problem:box:self_control:triple:reduction}). Отримані вами функції можуть залежати від $x$.
+\begin{multicols}{2}
     \begin{enumerate}[label*=\arabic*.]
         \item $\int\limits_0^1 2z \,dx$.
         \item $\int\limits_0^2 \left(3 x^{2}+3 z^{2}+9\right) \,dx$.
@@ -38,8 +50,10 @@
         \item $\int\limits_1^2 \frac{\ln\! \left(2\right)}{x z} \,dx$.
         \item $\int\limits_0^1 \left({x^{3}+\frac{1}{4}+z^{3}}\right) \,dx$.
         \item $\int\limits_0^2 \left(z^{2}+x\right) \,dx$.
-        \end{enumerate}
-\item Підрахуйте наступні інтеграли Рімана:
+    \end{enumerate}
+\end{multicols}
+\item\label{problem:box:self_control:triple:outer} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви інтегруєте функціїї, що є відповідями на попереднє завдання, а межі інтегрування збігаються з межами відповідних повторних інтегралів з відповідей на задвання (\ref{problem:box:self_control:triple:reduction}).
+\begin{multicols}{2}
     \begin{enumerate}[label*=\arabic*.]
         \item $\int\limits_0^3 2z \,dz$.
         \item $\int\limits_0^4 \left({6} {z^{2}}{+}{26}\right) \,dz$.
@@ -51,5 +65,6 @@
         \item $\int\limits_3^5 \frac{\ln\! \left(2\right)^{2}}{z} \,dz$.
         \item $\int\limits_0^1 \left(\frac{1}{2}+z^{3}\right) \,dz$.
         \item $\int\limits_0^3 \left({2} {z^{2}}{+}{2}\right) \,dz$.
-        \end{enumerate}
+    \end{enumerate}
+\end{multicols}
 \end{enumerate}
