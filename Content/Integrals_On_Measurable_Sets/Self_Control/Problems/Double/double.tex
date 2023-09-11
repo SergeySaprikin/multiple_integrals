@@ -8,70 +8,75 @@
 Відповіді на завдання (\ref{problem:measurable_sets:self_control:double:outer}) будуть значеннями відповідних подвійних інтегралів, наведених в завданні (\ref{problem:measurable_sets:self_control:double:reduction}), а також тих повторних інтегралів, які ви повинні отримати при виконанні завдання (\ref{problem:measurable_sets:self_control:double:reduction}).
 
 \begin{enumerate}
-\item\label{problem:measurable_sets:self_control:double:reduction} В кожному з наступних подвійних інтегралів зробіть рисунок області інтегруання та з'ясуйте, як простіше звести цей інтеграл до повторного. Зведіть подвійний інтеграл до повторного.
-\begin{enumerate}[label*=\arabic*.]
-    \item $\iint\limits_D (x - y) \, d x d y$, де $D$ --- область, обмежена лініями $y = 0$, $x + y = 2$ та $y = x$.
+    \item\label{problem:measurable_sets:self_control:double:reduction} В кожному з наступних подвійних інтегралів зробіть рисунок області інтегруання та з'ясуйте, як простіше звести цей інтеграл до повторного. Зведіть подвійний інтеграл до повторного.
+    \begin{enumerate}[label*=\arabic*.]
+        \item $\iint\limits_D (x - y) \, d x d y$, де $D$ --- область, обмежена лініями $y = 0$, $x + y = 2$ та $y = x$.
 
-    \item $\iint\limits_D \frac{x^{2}}{y^{2}} \, d x d y$, де $D$ --- область, обмежена лініями $x y = 1$, $y = x$, та $x = 2$.
+        \item $\iint\limits_D \frac{x^{2}}{y^{2}} \, d x d y$, де $D$ --- область, обмежена лініями $x y = 1$, $y = x$, та $x = 2$.
 
-    \item $\iint\limits_D \cos\left(x+y\right) \, d x d y$, де $D$ --- область, обмежена лініями $y = x$, $y = \pi - x$, та $y = \pi$.
+        \item $\iint\limits_D \cos\left(x+y\right) \, d x d y$, де $D$ --- область, обмежена лініями $y = x$, $y = \pi - x$, та $y = \pi$.
 
-    \item $\iint\limits_D \frac{2x^{2}-6 x}{y^{2}} \, d x d y$, де $D$ --- область, обмежена лініями $x = 1$, ${y = x}$ та ${2 x + y = 6}$.
+        \item $\iint\limits_D \frac{2x^{2}-6 x}{y^{2}} \, d x d y$, де $D$ --- область, обмежена лініями $x = 1$, ${y = x}$ та ${2 x + y = 6}$.
 
-    \item $\iint\limits_D \frac{y}{x+1} \, d x d y$, де $D$ --- область, обмежена лініями $x = 0$, ${y = 2 x}$ та ${y = x^2 + 1}$.
+        \item $\iint\limits_D \frac{y}{x+1} \, d x d y$, де $D$ --- область, обмежена лініями $x = 0$, ${y = 2 x}$ та ${y = x^2 + 1}$.
 
-    \item $\iint\limits_D x \, d x d y$, де $D$ --- область, обмежена лініями $x = 0$, ${y = x^3}$ та ${x + y = 2}$.
+        \item $\iint\limits_D x \, d x d y$, де $D$ --- область, обмежена лініями $x = 0$, ${y = x^3}$ та ${x + y = 2}$.
 
-    \item $\iint\limits_D \frac{2 x+6}{y+3} \, d x d y$, де $D$ --- область, обмежена лініями ${x + y + 1 = 0}$ та ${x = 1 - y^2}$.
+        \item $\iint\limits_D \frac{2 x+6}{y+3} \, d x d y$, де $D$ --- область, обмежена лініями ${x + y + 1 = 0}$ та ${x = 1 - y^2}$.
 
-    \item $\iint\limits_D  \sqrt{x -y}; \, d x d y$, де $D$ --- область, обмежена лініями $y = 1$, $y = 4$, $y = x$, та $y = \frac{4}{5}x$.
+        \item $\iint\limits_D  \sqrt{x -y}; \, d x d y$, де $D$ --- область, обмежена лініями $y = 1$, $y = 4$, $y = x$, та $y = \frac{4}{5}x$.
 
-    \item $\iint\limits_D {\mathrm e}^{x-y} \, d x d y$, де $D$ --- область, обмежена лініями ${y = x}$, ${ y = 2 x}$ та $x = 1$.
+        \item $\iint\limits_D {\mathrm e}^{x-y} \, d x d y$, де $D$ --- область, обмежена лініями ${y = x}$, ${ y = 2 x}$ та $x = 1$.
 
-    \item $\iint\limits_D \sqrt{y^{2}-x^{2}} \, d x d y$, де $D$ --- область, обмежена лініями ${y = x}$, ${y = -x}$ та ${y = 1}$.
-\end{enumerate}
-\item\label{problem:measurable_sets:self_control:double:inner} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви знаходите внутрішні інтеграли з відповідей на попереднє завдання, а також не те, що відповіді на це завдання мають бути функціями від $x$ або від $y$.
-\begin{enumerate}[label*=\arabic*.]
-    \begin{multicols}{2}
-        \item $\int\limits_{y}^{2-y}\left(x-y\right)d x$;
-        \item $\int\limits_{\frac{1}{x}}^{x}\frac{x^{2}}{y^{2}}d y$;
-        \item $\int\limits_{\pi -y}^{y}\cos\! \left(x+y\right)d x)$;
-        \item $\int\limits_{x}^{6-2 x}\frac{2 x^{2}-6 x}{y^{2}}d y$;
-        \item $\int\limits_{2 x}^{x^{2}+1}\frac{y}{x+1}d y$;
-        \item $\int\limits_{x^{3}}^{2-x}xd y$;
-        \item $\int\limits_{-1-y}^{-y^{2}+1}\frac{2 x+6}{y+3}d x$;
-        \item $\int\limits_{y}^{\frac{5 y}{4}}\sqrt{x-y}d x$;
-        \item $\int\limits_{x}^{2 x}{\mathrm e}^{x-y}d y$;
-        \item $\int\limits_{-y}^{y}\sqrt{-x^{2}+y^{2}}d x$.
-    \end{multicols}
-\end{enumerate}
-\item\label{problem:measurable_sets:self_control:double:outer} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви інтегруєте функціїї, що є відповідями на попереднє завдання, а межі інтегрування відповідають зовнішнім інтегралам з відповідей на задвання (\ref{problem:measurable_sets:self_control:double:reduction}).
-\par\noindent
-\begin{minipage}{14.5cm}
-\begin{enumerate}[label*=\arabic*.]
-            \item ${\int\limits_{0}^{1}2 \left(y-1\right)^{2}d y}$
-            \item ${\int\limits_{1}^{2}\left(x^{3}-x\right)d x}$.
-            \item ${\int_{\frac{\pi}{2}}^{\pi}\sin\! \left(2 y\right)d y}$
-            \item ${\int_{1}^{2}\left(3 x-6\right)d x}$
-            \item ${\int_{0}^{1}\left(\frac{1}{2} x^{3}-\frac{1}{2} x^{2}-\frac{1}{2} x+\frac{1}{2}\right)d x}$
-            \item ${\int_{0}^{1}x \left(-x^{3}-x+2\right)d x}$
-            \item ${\int_{-1}^{2}\left(y^{3}-3 y^{2}+4\right)d y}$
-            \item ${\int_{1}^{4}\frac{y^{\frac{3}{2}}}{12}d y}$
-            \item ${\int_{0}^{1}\left(1-{\mathrm e}^{-x}\right)d x}$
-            \item ${\int_{0}^{1}\frac{y^{2} \pi}{2}d y}$
-\end{enumerate}
-\end{minipage}
-\item Підрахуйте наступні подвійні інтеграли. Переконайтесь, що інтеграли дорівнюють один одному.
- \begin{enumerate}[label*=\arabic*.]
-            \item $\int\limits_0^3\int\limits_0^2 x^2y\,dx\,dy$ та $\int\limits_0^2 \int\limits_0^3 x^2y\,dy\,dx$
-            \item $\int\limits_0^5\int\limits_0^4 e^{x + y}\,dx\,dy$ та $\int\limits_0^4 \int\limits_0^5 e^{x + y}\,dy\,dx$
-            \item $\int\limits_0^2\int\limits_1^2 \frac{y}{x}\,dx\,dy$ та $\int\limits_1^2 \int\limits_0^2 \frac{y}{x}\,dy\,dx$
-            \item $\int\limits_0^1\int\limits_0^2 \frac{x^2}{1+y^2}\,dx\,dy$ та $\int\limits_0^2 \int\limits_0^1 \frac{x^2}{1+y^2}\,dy\,dx$
-            \item $\int\limits_0^4\int\limits_0^3 \sin(x + y)\,dx\,dy$ та $\int\limits_0^\pi \int\limits_0^\frac{\pi}{2} \sin(x + y)\,dy\,dx$
-            \item $\int\limits_0^2\int\limits_0^5 \sqrt{ 9 -x - 2y}\,dx\,dy$ та $\int\limits_0^5 \int\limits_0^2 \sqrt{ 9 -x - 2y}\,dy\,dx$
-            \item $\int\limits_1^3\int\limits_1^2 \frac{1}{\left( 2 x + 3 y \right)^2}\,dx\,dy$ та $\int\limits_1^2 \int\limits_1^3 \frac{1}{\left( 2 x + 3 y \right)^2}\,dy\,dx$
-            \item $\int\limits_0^3\int\limits_1^2 \frac{y}{x+y^2}\,dx\,dy$ та $\int\limits_1^2 \int\limits_0^3 \frac{y}{x+y^2}\,dy\,dx$
-            \item $\int\limits_0^\pi\int\limits_0^1 x^2\sin^2y\,dx\,dy$ та $\int\limits_0^1 \int\limits_0^\pi x^2\sin^2y\,dy\,dx$
-            \item $\int\limits_1^3\int\limits_0^2 \frac{x^2}{y^2}\,dx\,dy$ та $\int\limits_0^2 \int\limits_1^3 \frac{x^2}{y^2}\,dy\,dx$
-        \end{enumerate}
+        \item $\iint\limits_D \sqrt{y^{2}-x^{2}} \, d x d y$, де $D$ --- область, обмежена лініями ${y = x}$, ${y = -x}$ та ${y = 1}$.
+    \end{enumerate}
+    \item\label{problem:measurable_sets:self_control:double:inner} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви знаходите внутрішні інтеграли з відповідей на попереднє завдання, а також не те, що відповіді на це завдання мають бути функціями від $x$ або від $y$.
+    \begin{enumerate}[label*=\arabic*.]
+        \begin{multicols}{2}
+            \item $\int\limits_{y}^{2-y}\left(x-y\right)d x$;
+
+            \item $\int\limits_{\frac{1}{x}}^{x}\frac{x^{2}}{y^{2}}d y$;
+
+            \item $\int\limits_{\pi -y}^{y}\cos\! \left(x+y\right)d x)$;
+
+            \item $\int\limits_{x}^{6-2 x}\frac{2 x^{2}-6 x}{y^{2}}d y$;
+
+            \item $\int\limits_{2 x}^{x^{2}+1}\frac{y}{x+1}d y$;
+
+            \item $\int\limits_{x^{3}}^{2-x}xd y$;
+
+            \item $\int\limits_{-1-y}^{-y^{2}+1}\frac{2 x+6}{y+3}d x$;
+
+            \item $\int\limits_{y}^{\frac{5 y}{4}}\sqrt{x-y}d x$;
+
+            \item $\int\limits_{x}^{2 x}{\mathrm e}^{x-y}d y$;
+
+            \item $\int\limits_{-y}^{y}\sqrt{-x^{2}+y^{2}}d x$.
+        \end{multicols}
+    \end{enumerate}
+    \item\label{problem:measurable_sets:self_control:double:outer} Підрахуйте наступні інтеграли Рімана. Зверніть увагу на те, що ви інтегруєте функціїї, що є відповідями на попереднє завдання, а межі інтегрування відповідають зовнішнім інтегралам з відповідей на задвання (\ref{problem:measurable_sets:self_control:double:reduction}).
+    \par\noindent
+    \begin{enumerate}[label*=\arabic*.]
+        \begin{multicols}{2}
+                \item ${\int\limits_{0}^{1}2 \left(y-1\right)^{2}d y}$;
+
+                \item ${\int\limits_{1}^{2}\left(x^{3}-x\right)d x}$;
+
+                \item ${\int\limits_{\frac{\pi}{2}}^{\pi}\sin\! \left(2 y\right)d y}$;
+
+                \item ${\int\limits_{1}^{2}\left(3 x-6\right)d x}$;
+
+                \item ${\int\limits_{0}^{1}\left(\frac{1}{2} x^{3}-\frac{1}{2} x^{2}-\frac{1}{2} x+\frac{1}{2}\right)d x}$;
+
+                \item ${\int\limits_{0}^{1}x \left(-x^{3}-x+2\right)d x}$;
+
+                \item ${\int\limits_{-1}^{2}\left(y^{3}-3 y^{2}+4\right)d y}$;
+
+                \item ${\int\limits_{1}^{4}\frac{y^{\frac{3}{2}}}{12}d y}$;
+
+                \item ${\int\limits_{0}^{1}\left(1-{\mathrm e}^{-x}\right)d x}$;
+
+                \item ${\int\limits_{0}^{1}\frac{y^{2} \pi}{2}d y}$.
+        \end{multicols}
+    \end{enumerate}
 \end{enumerate}
